@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: kafka-demo
+
+  kafka:
+    # Consumer Configuration
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: my-kafka-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer - for strings
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.value.default.type: app.dto.Package  # Explicit default type
+        spring.json.trusted.packages: "app.dto"  # Secure package whitelisting
+        spring.json.use.type.headers: true  # Better type safety
+        allow.auto.create.topics: false  # Security best practice
+
+    # Producer Configuration
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer - for strings
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: true  # Adds type info to messages
+        spring.json.type.mapping: app.dto.Package:app.dto.Package  # Explicit type mapping
+
+    # Optional: Listener Configuration
+#    listener:
+#      type: batch  # or 'single' for single message processing
+#      ack-mode: manual  # for manual offset commits
