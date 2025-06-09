@@ -9,8 +9,8 @@ spring:
       group-id: my-kafka-group
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      #      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer - for strings
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         spring.json.value.default.type: app.dto.Package  # Explicit default type
         spring.json.trusted.packages: "app.dto"  # Secure package whitelisting
@@ -21,8 +21,8 @@ spring:
     producer:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      #      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer - for strings
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.add.type.headers: true  # Adds type info to messages
         spring.json.type.mapping: app.dto.Package:app.dto.Package  # Explicit type mapping
