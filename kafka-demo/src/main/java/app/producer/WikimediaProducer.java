@@ -1,26 +1,25 @@
 package app.producer;
 
-import app.config.WebClientConfig;
-import lombok.AllArgsConstructor;
+import app.config.KafkaTopics;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Slf4j
 public class WikimediaProducer {
     private final KafkaTemplate<String, String> kafkaTemplate;
-    private final WebClientConfig webClientConfig;
+    private final WebClient wikimediaWebClient;
 
     public void sendMessage(String message) {
-        kafkaTemplate.send("wikimedia-updates", message);
+        kafkaTemplate.send(KafkaTopics.WIKIMEDIA_UPDATES, message);
     }
 
-
     public void consumeMessage() {
-        webClientConfig.webClientBuilder()
-                .get()
+        wikimediaWebClient.get()
                 .uri("/stream/recentchange")
                 .retrieve()
                 .bodyToFlux(String.class)

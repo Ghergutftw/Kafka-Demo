@@ -10,7 +10,7 @@ public class WifimediaTopicConfig {
 
     @Bean
     public NewTopic wikiMedia() {
-        return TopicBuilder.name("wikimedia-updates")
+        return TopicBuilder.name(KafkaTopics.WIKIMEDIA_UPDATES)
                 .partitions(3)
                 .replicas(1)
                 .build();

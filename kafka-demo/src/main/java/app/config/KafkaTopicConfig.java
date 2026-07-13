@@ -10,7 +10,7 @@ public class KafkaTopicConfig {
 
      @Bean
      public NewTopic myTopic() {
-         return TopicBuilder.name("my-topic")
+         return TopicBuilder.name(KafkaTopics.MY_TOPIC)
                  .partitions(3)
                  .replicas(1)
                  .build();

@@ -1,5 +1,6 @@
 package app.producer;
 
+import app.config.KafkaTopics;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -14,8 +15,8 @@ public class KafkaProducer {
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     public void sendMessage(String message) {
-        log.info("Producing message: {} to my-topic", message);
-        kafkaTemplate.send("my-topic", message);
+        log.info("Producing message: {} to {}", message, KafkaTopics.MY_TOPIC);
+        kafkaTemplate.send(KafkaTopics.MY_TOPIC, message);
     }
 
 }
