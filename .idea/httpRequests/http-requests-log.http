@@ -1,0 +1,44 @@
+POST http://localhost:8080/api/v1/messages/see-update
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/v1/messages/send-json
+Content-Type: application/json
+Content-Length: 30
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "sample-package"
+}
+
+<> 2026-07-13T203105.500.json
+
+###
+
+POST http://localhost:8080/api/v1/messages/see-update
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/v1/messages/send
+Content-Type: text/plain
+Content-Length: 11
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+Hello Kafka
+
+<> 2026-07-13T203057.200.txt
+
+###
+

@@ -1,6 +1,5 @@
 package app.controller;
 
-import app.consumer.WikiMediaConsumer;
 import app.dto.Package;
 import app.producer.KafkaJsonProducer;
 import app.producer.KafkaProducer;
@@ -19,7 +18,7 @@ public class MessageController {
 
     private final KafkaProducer kafkaProducer;
     private final KafkaJsonProducer kafkaJsonProducer;
-    private final WikiMediaConsumer wikimediaProducer;
+    private final WikimediaProducer wikimediaProducer;
 
     @PostMapping("/send")
     public ResponseEntity<String> sendMessage(@RequestBody String message) {

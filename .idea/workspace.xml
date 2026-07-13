@@ -4,11 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e944cf-0014-414e-8e94-f11a7e029b9e" name="Changes" comment="" />
+    <list default="true" id="f8e944cf-0014-414e-8e94-f11a7e029b9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-demo/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-demo/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-demo/src/main/java/app/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-demo/src/main/java/app/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-demo/src/main/java/app/producer/WikimediaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-demo/src/main/java/app/producer/WikimediaProducer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="a43b9b59-f299-4c0c-a975-972cb7b934a2" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="a43b9b59-f299-4c0c-a975-972cb7b934a2" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/Madalin/Desktop/Files/Projects/Kafka-Demo" value="2xresnRBY9xpxD4KscuohTUyqzu" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="37" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -18,12 +53,34 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ghergutftw&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ghergutftw/Kafka-Demo.git&quot;,
+    &quot;accountId&quot;: &quot;58e8ff0f-fbaa-4225-bd34-2bddb2e52e53&quot;
+  }
+}</component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -39,25 +96,41 @@
     "Docker.kafka-demo.kafka: Compose Deployment.executor": "Run",
     "Docker.kafka-demo: Compose Deployment.executor": "Run",
     "HTTP Request.generated-requests | #101.executor": "Run",
+    "HTTP Request.requests | Kick off the Wikimedia recent-changes stream -> wikimedia-updates topic.executor": "Run",
+    "HTTP Request.requests | Send a JSON Package to my-topic.executor": "Run",
+    "HTTP Request.requests | Send a raw string message to my-topic (StringSerializer).executor": "Run",
     "Maven.kafka-demo [clean].executor": "Run",
     "Maven.kafka-demo [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.KafkaDemoApplication.executor": "Debug",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/madal/Desktop/Files/Projects/Kafka",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Madalin/Desktop/Files/Projects/Kafka-Demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunDashboard">
@@ -67,8 +140,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.kafka-demo: Compose Deployment">
-    <configuration name="generated-requests | #101" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="101" requestIdentifier="#101" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.KafkaDemoApplication">
+    <configuration name="requests | Kick off the Wikimedia recent-changes stream -&gt; wikimedia-updates topic" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/kafka-demo/requests.http" executionIdentifier="Kick off the Wikimedia recent-changes stream -&gt; wikimedia-updates topic" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Send a JSON Package to my-topic" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/kafka-demo/requests.http" executionIdentifier="Send a JSON Package to my-topic" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Send a raw string message to my-topic (StringSerializer)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/kafka-demo/requests.http" executionIdentifier="Send a raw string message to my-topic (StringSerializer)" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="KafkaDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -81,14 +160,6 @@
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="kafka-demo: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="kafka-demo/docker-compose.yml" />
-        </settings>
       </deployment>
       <method v="2" />
     </configuration>
@@ -120,10 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.kafka-demo: Compose Deployment" />
+        <item itemvalue="HTTP Request.requests | Kick off the Wikimedia recent-changes stream -&gt; wikimedia-updates topic" />
+        <item itemvalue="HTTP Request.requests | Send a JSON Package to my-topic" />
+        <item itemvalue="HTTP Request.requests | Send a raw string message to my-topic (StringSerializer)" />
         <item itemvalue="Docker.kafka-demo.kafka: Compose Deployment" />
         <item itemvalue="Docker.kafka-demo.kafka-ui: Compose Deployment" />
-        <item itemvalue="HTTP Request.generated-requests | #101" />
       </list>
     </recent_temporary>
   </component>
@@ -147,10 +219,20 @@
       <workItem from="1748702814276" duration="39000" />
       <workItem from="1748702863611" duration="2830000" />
       <workItem from="1748705710779" duration="5352000" />
+      <workItem from="1783962495415" duration="586000" />
+      <workItem from="1783963102066" duration="811000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

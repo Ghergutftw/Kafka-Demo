@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 public class WikimediaProducer {
     private final KafkaTemplate<String, String> kafkaTemplate;
     private final WebClientConfig webClientConfig;
-    private final WikimediaProducer wikimediaProducer;
 
     public void sendMessage(String message) {
         kafkaTemplate.send("wikimedia-updates", message);
@@ -27,7 +26,7 @@ public class WikimediaProducer {
                 .bodyToFlux(String.class)
                 .subscribe(s -> {
                     log.info("Received message: {}", s);
-                    wikimediaProducer.sendMessage(s);
+                    sendMessage(s);
                 });
     }
 }

@@ -6,16 +6,22 @@ services:
     container_name: kafka
     ports:
       - "9092:9092"
-#    If I do this the consumer doesnt work, needs work
-#    environment:
-#      KAFKA_NODE_ID: 1
-#      KAFKA_PROCESS_ROLES: controller,broker
-#      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
-#      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:29092
-#      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,EXTERNAL://localhost:29092
-#      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
-#      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
-#      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: controller,broker
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      # The app connects from the host as "localhost:9092" (see application.yml), so the
+      # PLAINTEXT listener must advertise "localhost", not the in-network hostname "kafka" -
+      # otherwise the client fetches metadata pointing at "kafka:9092", which doesn't resolve
+      # on the host and the consumer silently stalls.
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      # Single-node cluster: default replication factor of 3 would fail to create
+      # __consumer_offsets since there's only 1 broker available.
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 #  kafka-ui:
 #    container_name: kafka-ui
 #    image: provectuslabs/kafka-ui:latest
